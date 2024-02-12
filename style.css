@@ -1,0 +1,638 @@
+body {
+    background-color: #001402;
+    /* position: absolute;
+    background-image: url(forest-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; */
+    margin: 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+    padding-bottom: 100px;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+      } 
+
+* {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    width: 80px;
+    height: 100svh;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, .3);
+    backdrop-filter: blur(20px);
+}
+
+.logo {
+    position: absolute;
+    top: 20;
+    left: 20;
+    height: 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .logo {
+        top: 40px;
+        left: calc(50% - 200px);
+        height: 70px;
+    }
+}
+
+.logo img {
+    max-height: 100%;
+}
+
+.navcont {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    width: 40px;
+    height: 80%;
+}
+
+.line {
+    margin: 0 auto;
+    width: 2px;
+    height: 250px;
+    background-color: goldenrod;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-links img {
+    width: 2em;
+}
+
+#home {
+    scroll-snap-align: start;
+    width: 100%;
+    z-index: -1;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+#fullscreen-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    object-fit: fill;
+}
+
+#video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+
+}
+
+.backimg {
+    background: url(forest-2.jpg);
+    background-position: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+/* .background {
+    background-image: url(Earth.jpeg);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+  } */
+
+@font-face {
+    font-family: secondary;
+    src: url(conthrax-sb.otf);
+}
+
+@font-face {
+    font-family: secondary;
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: AVA;
+    src: url(AVA.ttf);
+}
+
+@font-face {
+    font-family: DUNE;
+    src: url(Dune_Rise.ttf);
+}
+
+
+@font-face {
+    font-family: Main;
+    src: url(nasalization.otf);
+}
+
+
+.divline {
+    width: 80%;
+    border-radius: 2px;
+    margin-left: 100px;
+    height: 3px;
+    background-image: linear-gradient(to right, gold, rgba(255, 215, 0, 0));
+}
+
+#home{
+background-image: linear-gradient(to bottom, black 1%, rgba(0, 0, 0, 0) 100%)
+}
+
+
+#home h1 {
+    padding-bottom: 10px;
+    color: white;
+    font-size: 4em;
+    width: 80%;
+    font-family: DUNE;
+    margin: 0 0 0 100px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#vision {
+    height: 100vh;
+    background-color:  rgb(0, 42, 28)
+}
+
+.heading {
+    text-align: center;
+    grid-area: heading;
+    width: 90%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading .h1 {
+    font-family: secondary;
+    font-weight: 900;
+    color: goldenrod;
+    font-size: 3em;
+}
+
+.heading .h2 {
+    margin-top: 3em;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1em;
+    font-weight: 900;
+    font-size: 22px;
+    font-family: secondary;
+}
+
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: goldenrod;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+.block1 {
+    grid-area: block1;
+}
+
+.block2 {
+    grid-area: block2;
+}
+
+.block3 {
+    grid-area: block3;
+}
+
+.block4 {
+    grid-area: block4;
+}
+
+.block img {
+    width: 50px;
+}
+
+.block {
+    display: grid;
+    grid-template: 'image contentin';
+    gap: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.pagecont {
+    gap: 1em;
+    width: 100%;
+    height: 100svh;
+    display: grid;
+    grid-template: 
+        'heading heading'
+        'block1 block2'
+        'block3 block4';
+}
+
+.pagecont img{
+    color: white;
+}
+
+.content {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.contentin {
+    margin-left: 20px;
+    border-bottom: 2px solid goldenrod;
+    height: 80%;
+    padding-bottom: 30px;
+    block-size: fit-content;
+}
+
+.contentin p {
+    color: white;
+    font-size: 1em;
+    font-family: secondary;
+}
+
+.contentin h1 {
+    font-size: 34px;
+    font-family: secondary;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    
+.navcont {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    width: 80%;
+    height: 4px;
+}
+
+    nav {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        box-shadow: 0px 0px 20px rgb(0, 0, 0, .3);
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+    }
+
+
+    .heading {
+        width: 95%;
+    }
+
+    #home {
+        background-position: -400px;
+    }
+
+    #home p {
+        width: 75%;
+        font-size: 30px;
+    }
+
+    .pagecont {
+        grid-template: 
+            'heading' 
+            'block1' 
+            'block2' 
+            'block3' 
+            'block4';
+    }
+
+    .content {
+        width: 85%;
+    }
+
+    .nav-links img {
+        width: 3em;
+    }
+
+    .line {
+        width: 80%;
+        height: 2px;
+    }
+
+    .contentin h1 {
+        font-size: 45px;
+    }
+
+    .contentin p {
+        font-size: 30px;
+    }
+
+   
+
+    .img-cont {
+        width: 800px;
+        height: 1200px;
+    }
+
+    .top-btns a {
+        font-size: 10px;
+    }
+}
+
+.portfolio h1 {
+    font-size: 4em;
+    font-family: secondary;
+    margin: 0 0 10px 0;
+}
+
+.portfolio .title{
+    font-weight: 900;
+} 
+
+.portfolio p{
+    color: white;
+    font-family: secondary;
+    font-weight: 900;
+    margin-bottom: 3em;
+}
+
+.portfolio {
+    text-align: center;
+    width: 100%;
+    background-color:  rgb(0, 26, 9)
+
+}
+
+.portfolio .cont {
+    padding:  4em 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.portimg {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    gap: 4em;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.img-cont {
+    width: 400px;
+    height: 400px;
+}
+
+.img-cont img {
+    border-radius: 10%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.img-cont video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.img-cont .textbox {
+    border-radius: 10%;
+    position: absolute;
+    transform: translateY(-100%);
+    z-index: 100;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.img-cont:hover .textbox{
+    opacity: 1;
+}
+
+.text p {
+    color: white;
+    font-family: secondary;
+    font-weight: 700;
+    margin: 0;
+}
+
+.textbox .text {
+    width: 90%;
+    margin: 2em auto;
+}
+
+.text .textH {
+    font-size: 30px;
+}
+
+.pics > div {
+    width: 150px;
+    height: 150px;
+    block-size: fit-content;
+}
+
+.team {
+    width: 100%;
+    height: 400px;
+    background-color: #001303;
+    background-size: cover;
+    background-position: 0px -200px;
+}
+
+.pics img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.pics > div:nth-child(2) img{
+    object-position: 0px;
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.people {
+    display: grid;
+    justify-content: center;
+    place-content: center;
+    width: 60%;
+    gap: 2em;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.people h1 {
+    text-align: center;
+    font-family: secondary;
+    font-size: 35px;
+}
+
+.pics > div h1 {
+    font-size: 1em;
+}
+
+.pics > div h2 {
+    margin: 1em 0 0 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: secondary;
+    color: white;
+}
+
+footer {
+    justify-content: center;align-items: center;
+    height: 350px;
+    width: 100%;
+    background-color: #002214;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+footer .left img {
+    width: 250px;
+}
+
+footer .right {
+    width: 50%;
+    font-size: 16px;
+    color: rgb(224, 224, 224);
+    font-family: secondary;
+}
+
+.right h1{
+    margin-bottom:10px;
+}
+
+.right p{
+    color: white;
+}
+
+
+
+
+footer .left h2 {
+    font-size: 0.6em;
+    color: rgb(192, 192, 192);
+    font-family: DUNE;
+}
+
+footer .linkedin img {
+    width: 1em;
+    height: 1em;
+}
+
+footer .linkedin {
+    display: flex;
+    align-items: center;
+}
+
+.top-btns {
+    display: flex;
+    gap: 2em;
+    margin: 30 0 0 100px;
+}
+
+.copyright {
+    width: 100%;
+    height: 80px;
+    font-size: 16px;
+    font-family: secondary;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001402;
+    color: rgb(189, 189, 189);
+}
+
+.top-btns a {
+    border: 0.5pt solid white;
+    padding: 18px 35px;
+    color: white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    background-color: #00000000;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: DUNE;
+    transition: .4s;
+}
+
+.top-btns a:hover {
+    background-color: white;
+    color: black;
+}
