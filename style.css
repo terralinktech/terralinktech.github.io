@@ -9,7 +9,6 @@ body {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none;
-    
 }
 
 img {
@@ -182,12 +181,13 @@ background-image: linear-gradient(to bottom, black 1%, rgba(0, 0, 0, 0) 100%)
 
 
 #home h1 {
+    line-height: 1.1em;
     padding-bottom: 10px;
     color: white;
     font-size: 4em;
     width: 80%;
     font-family: DUNE;
-    margin: 0 0 0 100px;
+    margin: 0 0 10px 100px;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -303,15 +303,16 @@ p {
 }
 
 .contentin h1 {
-    font-size: 34px;
+    font-size: 2em;
     font-family: secondary;
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 1024px) {
 
     body{
     padding-bottom: 100px;
-}
+    }
     
 .navcont {
     z-index: 100;
@@ -458,9 +459,10 @@ p {
     border-radius: 10%;
     position: absolute;
     transform: translateY(-100%);
-    z-index: 100;
+    z-index: 1;
     width: 400px;
     height: 400px;
+    
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     transition: 0.7s;
@@ -483,7 +485,7 @@ p {
 }
 
 .text .textH {
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .pics > div {
@@ -597,9 +599,23 @@ footer .linkedin img {
     height: 1em;
 }
 
+footer p{
+    margin-bottom: 10px;
+}
+
 footer .linkedin {
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
+}
+
+footer h3{
+
+    margin: 5px 0 5px 0;
+
+    
+
 }
 
 .top-btns {
