@@ -118,7 +118,7 @@ nav {
 }
 
 .backimg {
-    background: url(forest-2.jpg);
+    background: url(img2.png);
     background-position: 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@ nav {
 }
 
 #home{
-background-image: linear-gradient(to bottom, black 1%, rgba(0, 0, 0, 0) 100%)
+/* background-image: linear-gradient(to bottom, black 1%, rgba(0, 0, 0, 0) 100%) */
 }
 
 
@@ -589,7 +589,7 @@ footer .right {
 
 
 footer .left h2 {
-    font-size: 0.6em;
+    font-size: 0.9em;
     color: rgb(192, 192, 192);
     font-family: DUNE;
 }
